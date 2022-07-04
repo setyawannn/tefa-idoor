@@ -9,8 +9,8 @@
     <!-- CSS Code -->
     <link rel="stylesheet" href="style-home.css">
 
-    <!-- Javascript Code -->
-    <script src="script-home.js"></script>
+    <!-- My Javascript -->
+    <script src="script.js"></script>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/1c9103e509.js" crossorigin="anonymous"></script>
@@ -25,8 +25,8 @@
         </div>
         <ul class="nav-links">
             <li><a href="/main-screen/index.html">Home</a></li>
-            <li><a href="/page/detail.html">Details</a></li>
-            <li><a href="/page/data.html">Booking</a></li>
+            <li><a href="/page/detail.html">Log In</a></li>
+            <li><a class="nav-button" href="#">Sign Up</a></li>
         </ul>
     </nav>
     <!-- End of navbar -->
@@ -101,6 +101,7 @@
         <div class="data-bg"></div>
         <div class="data-content">
             <div class="content-head">
+                <div class="line-white"></div>
                 <h3>Our Room</h3>
                 <p>Data dibawah adalah data dari keseluruhan cabang hotel yang kami miliki Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aliquam nostrum architecto magni, ullam recusandae molestias! Aspernatur voluptates minus quaerat magnam corporis alias repudiandae voluptate obcaecati, aliquam maiores aperiam reprehenderit!</p>
             </div>
@@ -134,7 +135,18 @@
                     <p>8 Penghargaan</p>
                 </div>
             </div>
-            <button><a href="">Book Now</a></button>
+            <div class="data-dropdown">
+                <div class="dropdown-select">
+                    <span class="select">Pilih Cabang</span>
+                    <i class="fa fa-caret-down icon"></i>
+                </div>
+                <div class="data-list">
+                    <div class="data-item"><a href="">Jakarta</a></div>
+                    <div class="data-item"><a href="">Surabaya</a></div>
+                    <div class="data-item"><a href="">Bali</a></div>
+                    <div class="data-item"><a href="">Kediri</a></div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- End of Data -->
@@ -179,17 +191,18 @@
 
     <!-- Footer -->
     <footer>
+        <!-- Container -->
         <div class="container-footer">
             <div class="footer-left">
                 <h3>iDoor</h3>
                 <p class="footer-links">
                     <a href="#">Home</a>
                     |
-                    <a href="#">Detail</a>
+                    <a href="#">Log In</a>
                     |
-                    <a href="#">Booking</a>
+                    <a href="#">Sign Up</a>
                 </p>
-                <p class="company-name">Copyright © 2022 <strong>KENAFADeveloper</strong> All rights reserved</p>
+                <p class="company-name">Copyright © 2022 <strong>iDoorDeveloper</strong> All rights reserved</p>
             </div>
             <div class="footer-center">
                 <h4>Informasi Team</h4>
@@ -201,9 +214,10 @@
             </div>
             <div class="footer-right">
                 <h4>About The Team</h4>
-                <p><strong>KENAFADeveloper</strong> Pembagian tugasnya Prayoga pada home, oryza bagian detail dan zefanya bingung bagian form. sekian terima kasih.</p>
+                <p><strong>iDoor Developer</strong> Pembagian tugasnya Prayoga pada home, oryza bagian detail dan zefanya bingung bagian form. sekian terima kasih.</p>
             </div>
         </div>
+        <!-- End of Container -->
     </footer>
     <!-- End of Footer -->
 </body>
