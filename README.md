@@ -39,7 +39,7 @@ Website penginapan iDoor dengan Form Booking penginapan, Detail kamar, Nama caba
 > ![form-pesan-kamar](https://github.com/anotherSar0nto/img/blob/main/iDoor-img/polosan.png)
 - Isi form
 > ![form-diisi](https://github.com/anotherSar0nto/img/blob/main/iDoor-img/keisi.png)
--Tiket Hotel
+- Tiket Hotel
 > ![tiket-hote](https://github.com/anotherSar0nto/img/blob/main/iDoor-img/tiket.png)
 
 ## Teknologi
