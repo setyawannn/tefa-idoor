@@ -129,14 +129,15 @@ nav {
 	font-size: 14px;
 }
 
+.dropdown-item:hover {
+	background-color: #ccc;
+}
+
 .dropdown-item a {
 	color: #000;
 	text-decoration: none;
 	font-weight: 400;
-}
-
-.dropdown-item a:hover {
-	color: red;
+	padding-right: 100%;
 }
 /* End of Hero Section */
 
@@ -367,17 +368,18 @@ nav {
 	padding: 0.3rem;
 	font-size: 14px;
 	width: 100%;
-	text-align: center;
 }
 
 .data-item:hover {
 	background-color: rgb(186, 6, 6);
+	border-radius: 4px;
 }
 
 .data-item a {
 	color: #fff;
 	text-decoration: none;
 	font-weight: 400;
+	padding-right: 100%;
 }
 
 /* End of Data Section */
