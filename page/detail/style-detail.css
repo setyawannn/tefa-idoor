@@ -31,15 +31,28 @@ nav {
 }
 
 .nav-links a {
-	color: black;
+	color: #000;
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 16px;
 }
+
+.nav-links .nav-button {
+	background-color: red;
+  color: #fff;
+	padding: 6px 16px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.nav-links .nav-button:hover {
+	background-color: #000;
+	color: #fff;	
+}
 /* End of navbar section */
 
 /* Card */
-
 *,
 * ::before,
 *::after {
