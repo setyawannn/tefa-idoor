@@ -3,7 +3,7 @@ Website penginapan iDoor dengan Form Booking penginapan, Detail kamar, Nama caba
 
 ## Fitur dalam website iDoor
 
-### Home
+## Home
 - Pilih lokasi penginapan 
 - Fasilitas dan layanan yang ditawarkan
 - Informasi ketersediaan kamar
@@ -12,14 +12,19 @@ Website penginapan iDoor dengan Form Booking penginapan, Detail kamar, Nama caba
 - Informasi detail kamar
 - Informasi harga kamar 
 
-### Form
+> 
 
-### Detail 
+## Form
+
+## Detail 
 - Perbandingan tipe kamar
 - Foto dari tipe kamar Deluxe dan Superior
 - Harga
 - Kamar tersedia 
 - Kamar terpakai
 - Pesan kamar
+
+## Documentation
+> ![detail-penginapan](https://github.com/anotherSar0nto/img/blob/main/iDoor-img/screencapture-127-0-0-1-5500-bokingv2-detail-jakarta-html-2022-07-04-09_58_42.png)
 
 
