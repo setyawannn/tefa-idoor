@@ -37,6 +37,20 @@ nav {
 	font-weight: 500;
 	font-size: 16px;
 }
+
+.nav-links .nav-button {
+	background-color: red;
+	padding: 6px 12px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.nav-links .nav-button:hover {
+	background-color: #fff;
+	color: red;	
+}
+
 /* End of navbar section */
 
 
@@ -246,6 +260,12 @@ nav {
 	text-transform: uppercase;
 	cursor: pointer;
 }
+
+.welcome-content button:hover {
+	color: red;
+	border: 2px solid red;
+	background-color: #fff;
+}
 /* End of  Welcome Section*/
 
 /* Data Section */
@@ -277,6 +297,7 @@ nav {
 	font-size: 26px;
 	font-weight: 700;
 	color: #fff;
+	margin-top: 12px;
 }
 
 .content-head p {
@@ -318,28 +339,48 @@ nav {
 	width: 50%;
 }
 
-.data-content button {
-	background-color: #fff;
-	border: none;
-	margin-top: 7vh;
-	margin-right: 20px;
-	width: 10rem;
-	height: 2.3rem;
-	border-radius: 8px;
-	font-weight: 500;
-	font-size: 14px;
-	text-transform: uppercase;
-	cursor: pointer;
-	float: right;
+.data-dropdown {
+	width: 50%;
+	position: relative;
+	margin-top: 24px;
 }
 
-.data-content button a {
-	color: red;
-	text-decoration: none;
-	font-size: 14px;
-	font-weight: 600;
+.data-dropdown:hover .data-list {
+	opacity: 1;
+	visibility: visible;
 }
-/* End of Data */
+
+.data-list {
+	border-radius: 4px;
+	background-color: red;
+	width: 100%;
+	position: absolute;
+	top: 115%;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+
+.data-item {
+	padding: 0.3rem;
+	font-size: 14px;
+	width: 100%;
+	text-align: center;
+}
+
+.data-item:hover {
+	background-color: rgb(186, 6, 6);
+}
+
+.data-item a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+/* End of Data Section */
 
 /* Room Section */
 .room-head h3 {
@@ -364,7 +405,7 @@ nav {
 .pict-item {
 	width: 30%;
 }
-/* End of Room */
+/* End of Room Section */
 
 /* Testimonial Section */
 .testimonial {
@@ -445,7 +486,7 @@ nav {
 	opacity: 90%;
 	text-transform: uppercase;
 }
-/* End of Testimonial */
+/* End of Testimonial Section */
 
 /* Footer Section */
 footer {
@@ -500,7 +541,6 @@ footer {
 	font-size: 16px;
 	font-weight: 700;
 	color: #fff;
-	opacity: 80%;
 }
 
 .footer-center .team-name {
@@ -525,7 +565,4 @@ footer {
 	color: #fff;
 	opacity: 80%;
 }
-
-
-
-/* End of Footer */
+/* End of Footer Section */
