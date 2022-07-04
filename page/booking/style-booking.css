@@ -1,0 +1,225 @@
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Section */
+nav {
+	width: 85%;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 8vh;
+}
+
+.nav-logo h1 a {
+	font-size: 32px;
+	height: auto;
+	padding: 0 10px;
+    color: red;
+    text-decoration: none;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 30%;
+    list-style: none;
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.nav-links .nav-button {
+	background-color: red;
+	padding: 6px 16px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.nav-links .nav-button:hover {
+	background-color: #fff;
+	color: red;	
+}
+
+/* End of navbar section */
+
+
+/* Hero Section */
+.hero {
+	background-image: url(../../img/bg/hero.png);
+	background-size: cover;
+	height: 90vh;
+	margin-top: -12vh;
+    display: grid;
+    place-items: center;
+}
+
+.hero-caption {
+    text-align: center;
+}
+
+.hero-caption h2 {
+	color: #fff;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 1.1;
+}
+
+.hero-caption p {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	opacity: 90%;
+	line-height: 1.5;
+	margin-top: 8px;    
+}
+/* End of Hero Section */
+
+/* Booking Section */
+.container-booking {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.container-booking form .user-details {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: -34vh;
+	padding: 18px 24px;
+	border-radius: 8px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+
+form .user-details .input-box {
+	margin-bottom: 14px;
+	width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .book-head {
+	font-weight: 500;
+	margin-bottom: 4px;
+	display: block;
+}
+
+.user-details .input-box input, select {
+	height: 36px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding-left: 14px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:active,
+.user-details .input-box select:focus,
+.user-details .input-box select:active {
+	border-color: red;
+}
+
+form .button {
+	height: 42px;
+	width: 100%;
+	margin: 32px 0;
+}
+
+form .button input {
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1;
+	background-color: red;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+form .button input:hover {
+	color: red;
+	border: 2px solid red;
+	background-color: #fff;
+}
+/* End of Booking Section */
+
+/* Ticket Section */
+.ticket {
+	background-color: rgb(28, 26, 26);
+	height: 100vh;
+	padding: 20px 0;
+}
+
+.container-ticket {
+	width: 80%;
+	margin: 0 auto;
+	border: 4px dashed red;
+	padding: 28px 42px;
+}
+
+.ticket-head h3 {
+	color: #fff;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.ticket-head p {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.data-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.ticket-data {
+	width: 50%;
+	margin-top: 14px;
+}
+
+.ticket-data .data-head {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin-top: 18px;	
+}
+
+.ticket-data .value {
+	width: 50%;
+	height: 24px;
+	background-color: #fff;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+
+.ticket-data .value p {
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 12px;
+}
+
+.ticket-data span p {
+	font-size: 24px;
+	font-weight: 600;
+	color: red;
+}	
+

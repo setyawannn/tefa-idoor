@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Room</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style-booking.css">
+
+    <script src="./script-form.js"></script>
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-logo">
+            <h1><a href="/home/index.html">iDoor</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/home/index.html">Home</a></li>
+            <li><a href="/page/booking/booking.html">Booking</a></li>
+            <li><a class="nav-button" href="/home/index.html">Informasi</a></li>
+        </ul>
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-caption">
+            <h2>Sleep anywhere and anytime.</h2>
+            <p>its so simple way u can use, just open your phone book and then bubuk.</p>
+        </div>
+    </section>
+    <!-- End of Hero -->
+
+    <!-- Booking -->
+
+    <div class="container-booking">
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="book-head">Nama Lengkap</span>
+                    <input id="in-name" type="text" placeholder="Masukan nama anda" required>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Nomor Telepon</span>
+                    <input id="in-nomor" type="text" placeholder="Masukan nomor anda" required>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Tanggal Check-in</span>
+                    <input id="in-checkin" type="date" placeholder="Masukan tanggal check-in" required>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Tanggal Check-out</span>
+                    <input id="in-checkout" type="date" placeholder="Masukan tanggal check-out" required>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Pilih Cabang</span>
+                    <select id="in-cabang" required>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Bali">Bali</option>
+                        <option value="Kediri">Kediri</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Tipe Kamar</span>
+                    <select id="in-type" required>
+                        <option value="Deluxe">Deluxe</option>
+                        <option value="Superior">Superior</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Jumlah Kamar</span>
+                    <input id="in-room" type="number" placeholder="Masukan jumlah kamar" required>
+                </div>
+                <div class="input-box">
+                    <span class="book-head">Jumlah Orang</span>
+                    <select id="in-person" required>
+                        <option value="1 Orang">1</option>
+                        <option value="2 Orang">2</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <input id="bookButton" type="submit" value="BOOK ROOM" onclick="printId">
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <!-- End of Booking -->
+
+    <!-- Ticket -->
+    <section class="ticket">
+        <div class="container-ticket">
+            <div class="ticket-head">
+                <h3>iDoor Hotel Ticket</h3>
+                <p>Selesaikan pembayaran dibawah atau download dan bayar ditempat</p>
+            </div>
+            <div class="data-container">
+                <div class="ticket-data">
+                    <span class="data-head">Nama Lengkap</span>
+                    <div class="value">
+                        <p id="o-name"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Nomor Telepon</span>
+                    <div class="value">
+                        <p id="o-nomor"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Tanggal Check-in</span>
+                    <div class="value">
+                        <p id="o-checkin"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Tanggal Check-out</span>
+                    <div class="value">
+                        <p id="o-checkout"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Cabang</span>
+                    <div class="value">
+                        <p id="o-cabang"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Tipe Kamar</span>
+                    <div class="value">
+                        <p id="o-type"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Jumlah Kamar</span>
+                    <div class="value">
+                        <p id="o-room"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Jumlah Orang</span>
+                    <div class="value">
+                        <p id="o-person"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Total Harga</span>
+                    <div class="value">
+                        <p id="o-price"></p>
+                    </div>
+                </div>
+                <div class="ticket-data">
+                    <span class="data-head">Silakan bayar dan datang ke reseptionis. Kode unik anda <p id="unique-code"></p> </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Ticked -->
+    <script>
+        const rName = document.getElementById("o-name");
+        const rNomor = document.getElementById("o-nomor");
+        const rCheckin = document.getElementById("o-checkin");
+        const rCheckout = document.getElementById("o-checkout");
+        const rCabang = document.getElementById("o-cabang");
+        const rType = document.getElementById("o-type");
+        const rRoom = document.getElementById("o-room");
+        const rPerson = document.getElementById("o-person");
+        const rPrice = document.getElementById("o-price");
+        const rUnique = document.getElementById("unique-code");
+
+        document.getElementById("bookButton").onclick = function() {
+            let vName = document.getElementById("in-name").value;
+            let vNomor = document.getElementById("in-nomor").value;
+            let vCheckin = document.getElementById("in-checkin").value;
+            let vCheckout= document.getElementById("in-checkout").value;
+            let vCabang = document.getElementById("in-cabang").value;
+            let vType = document.getElementById("in-type").value;
+            let vRoom = document.getElementById("in-room").value;
+            let vPerson = document.getElementById("in-person").value;
+
+
+            // Menghitung Tanggal
+            const dateOne = new Date(vCheckin);
+            const dateTwo = new Date(vCheckout);
+            const time = Math.abs(dateTwo - dateOne);
+            const days = Math.ceil(time / (1000 * 60 * 60 * 24));
+
+            // simpanan variable
+            let totalHarga;
+
+            // total harga
+            if(vType === "Deluxe") {
+                let hargaDeluxe = 22_000_000;
+                totalHarga = vRoom * hargaDeluxe * days
+            } else if(vType === "Superior") {
+                let hargaSuperior = 12_000_000;
+                totalHarga = vRoom * hargaDeluxe * days;
+            }
+
+            //Random Angka
+            let random = Math.floor(Math.random() * (9999999 - 999999 + 999999) ) + 999999;
+
+            rName.innerHTML += (vName);
+            rNomor.innerHTML += (vNomor);
+            rCheckin.innerHTML += (vCheckin);
+            rCheckout.innerHTML += (vCheckout);
+            rCabang.innerHTML += (vCabang);
+            rType.innerHTML += (vType);
+            rRoom.innerHTML += (vRoom);
+            rPerson.innerHTML += (vPerson);
+            rPrice.innerHTML += ("Rp " + totalHarga);
+            rUnique.innerHTML += (random);
+
+        }
+
+
+    </script>
+
+</body>
+</html>
