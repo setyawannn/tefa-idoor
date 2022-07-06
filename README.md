@@ -1,4 +1,4 @@
-#JIKA FILL ERROR CEK KE LINK DIBAWAH
+# JIKA FILE ERROR CEK LINK DIBAWAH. MOHON MAAF dan TERIMA KASIH
 https://github.com/setyawannn/tefa-iDoor-reupload
 
 # Website iDoor
