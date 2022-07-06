@@ -45,6 +45,13 @@ Website penginapan iDoor dengan Form Booking penginapan, Detail kamar, Nama caba
 - Tiket Hotel
 > ![tiket-hote](https://github.com/anotherSar0nto/img/blob/main/iDoor-img/tiket.png)
 
+## Literasi penggunaan
+- Pilih cabang penginapan dari menu pilih cabang
+- Cek ketersediaan kamar apakah masih tersedia
+- Jika kamar tersedia silahkan pilih book now
+- Masukkan semua data anda dengan benar
+- Setelah memasukkan data anda akan mendapatkan tiket anda dan anda bisa membawanya ke kasir hotel
+
 ## Teknologi
 - HTML 5
 - CSS 3
@@ -54,5 +61,3 @@ Website penginapan iDoor dengan Form Booking penginapan, Detail kamar, Nama caba
 - Prayoga Adi Setyawan
 - Oryza Valendio
 - Zevanya Radityo
-
-
